@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>况宁的元气小世界</title>
+    <style>
+        /* 全局样式 */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: "Microsoft Yahei", sans-serif;
+            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%); /* 暖色调渐变背景 */
+            color: #333;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        /* 主容器 */
+        .resume-container {
+            max-width: 900px;
+            margin: 30px auto;
+            background: rgba(255, 255, 255, 0.9); /* 半透明白色卡片 */
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border: 2px solid #ff6b81; /* 粉色边框 */
+        }
+
+        /* 头部头像区 */
+        .profile-header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px dashed #ff9ff3; /* 虚线分割 */
+        }
+
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 5px solid white;
+            box-shadow: 0 0 20px rgba(255, 105, 180, 0.5);
+            margin-bottom: 15px;
+            object-fit: cover;
+        }
+
+        .profile-header h1 {
+            color: #ff6b81;
+            font-size: 2.5em;
+            margin-bottom: 5px;
+            text-shadow: 2px 2px 0 #feca57;
+        }
+
+        .tagline {
+            font-size: 18px;
+            color: #555;
+            font-style: italic;
+        }
+
+        /* 通用卡片样式 */
+        .card {
+            background: white;
+            margin: 20px 0;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+            border-left: 5px solid #48dbfb;
+        }
+
+        .card:hover {
+            transform: translateY(-5px); /* 悬浮效果 */
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+
+        .card h2 {
+            color: #0abde3;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        /* 图标装饰 */
+        .card h2::before {
+            content: "✨";
+            margin-right: 10px;
+            font-size: 24px;
+        }
+
+        /* 列表样式 */
+        .info-list {
+            list-style: none;
+        }
+
+        .info-list li {
+            margin: 12px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .info-list li::before {
+            content: "🌸"; /* 可爱的项目符号 */
+            position: absolute;
+            left: 0;
+            color: #ff9ff3;
+        }
+
+        /* 双列布局 */
+        .two-column {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .column {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        /* 标签样式 */
+        .badge {
+            display: inline-block;
+            padding: 5px 12px;
+            margin: 5px;
+            background: linear-gradient(45deg, #ff6b6b, #feca57);
+            color: white;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        /* 底部签名 */
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #888;
+            font-size: 14px;
+        }
+
+        .heart {
+            color: #e55039;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="resume-container">
+    <!-- 头部区域 -->
+    <div class="profile-header">
+        <!-- 这里可以替换成你的真实头像URL -->
+        <img src="https://picsum.photos/seed/kuangning/120/120" alt="况宁的头像" class="avatar">
+        <h1>👩‍⚕️ 况宁</h1>
+        <p class="tagline">📚 汉语言文学专业 | 💼 金融背景的文艺少女 | 🌟 热爱生活的奋斗者</p>
+    </div>
+
+    <!-- 个人基本信息 -->
+    <div class="card">
+        <h2>Contact 📞</h2>
+        <ul class="info-list">
+            <li>📱 电话：15171715870</li>
+            <li>📩 邮箱：1399167559@qq.com</li>
+            <li>🏠 坐标：湖北 · 武汉</li>
+        </ul>
+    </div>
+
+    <!-- 教育与技能（双列布局） -->
+    <div class="two-column">
+        <div class="column">
+            <div class="card">
+                <h2>Education 🎓</h2>
+                <ul class="info-list">
+                    <li><strong>湖北大学知行学院</strong> - 金融学本科 (2017-2022)</li>
+                    <li><strong>西南财大</strong> - 保险学考研备考 (2022-2023)</li>
+                    <li><strong>汉语言文学</strong> - 专业进修中 📖</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <h2>Skills ⚡</h2>
+                <div>
+                    <span class="badge">Office办公</span>
+                    <span class="badge">金融分析</span>
+                    <span class="badge">文案写作</span>
+                    <span class="badge">演讲辩论</span>
+                    <span class="badge">团队协作</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 项目与社团经历 -->
+    <div class="card">
+        <h2>Wonderful Experience ✨</h2>
+        <ul class="info-list">
+            <li>
+                <strong>捭阖杯辩论赛湖北赛区 分场负责人</strong>
+                <p>组织协调超10人团队，展现出色的领导与沟通能力。</p>
+            </li>
+            <li>
+                <strong>长江商报大学生营销大赛 团队成员</strong>
+                <p>成功签单11单，用热情与专业打动客户，总结实践经验。</p>
+            </li>
+            <li>
+                <strong>金融协会 组织部副部长</strong>
+                <p>发起学院首个金融协会，覆盖500+人群，热爱分享与传播。</p>
+            </li>
+        </ul>
+    </div>
+
+    <!-- 个人优势 -->
+    <div class="card">
+        <h2>Me 🌸</h2>
+        <ul class="info-list">
+            <li><strong>双背景优势</strong>：金融本科打底，文学素养加持，既能理性分析又能感性表达。</li>
+            <li><strong>超强抗压</strong>：备考经历磨练了坚韧的意志，对待工作认真负责。</li>
+            <li><strong>有趣灵魂</strong>：喜欢爬山和桌球，是个充满活力的快乐女孩！</li>
+        </ul>
+    </div>
+
+    <!-- 底部 -->
+    <div class="footer">
+        <p>Made with <span class="heart">❤️</span> by 况宁 | © 2025 All Rights Reserved</p>
+    </div>
+
+</div>
+
+</body>
+</html>
